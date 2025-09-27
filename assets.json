@@ -1,0 +1,442 @@
+{
+  "company_info": {
+    "name": "Growthally Advisors Pvt Ltd",
+    "tagline": "A friend for Growth",
+    "established": "July 30, 2010",
+    "cin": "U74999MH2010PTC206104",
+    "email": "info@growthally.org",
+    "website": "https://growthally.org",
+    "whatsapp": "917506236027"
+  },
+  "locations": {
+    "mumbai": {
+      "name": "Mumbai Office",
+      "address": "21A, Vasudev Chambers, Old Nagardas Cross Lane, Near Andheri Subway, Andheri East, Mumbai – 400069, Maharashtra, India",
+      "phone": "+91 75062 36027",
+      "is_headquarters": true
+    },
+    "delhi": {
+      "name": "Delhi Office", 
+      "address": "D-251, 1st Floor, Street No. 10, Laxmi Nagar, Delhi – 110092",
+      "is_headquarters": false
+    }
+  },
+  "business_hours": {
+    "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "weekends": "Saturday: 10:00 AM - 2:00 PM",
+    "sunday": "Closed"
+  },
+  "services": [
+    {
+      "id": "debt-syndication",
+      "title": "Debt Syndication",
+      "description": "Comprehensive debt syndication services for businesses seeking capital",
+      "detailed_description": "Our debt syndication team specializes in structuring and arranging financing solutions for businesses across various sectors. We leverage our extensive network of financial institutions to secure optimal terms for our clients.",
+      "key_features": ["Structured Financing", "Risk Assessment", "Lender Network", "Documentation Support"],
+      "image": "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
+      "icon": "fas fa-handshake",
+      "process": [
+        "Initial Assessment and Financial Analysis",
+        "Structure Design and Term Sheet Preparation", 
+        "Lender Identification and Approach",
+        "Due Diligence Coordination",
+        "Documentation and Closing"
+      ],
+      "case_studies": [
+        {
+          "title": "Manufacturing Company Expansion",
+          "description": "Successfully arranged ₹50 Cr term loan for capacity expansion",
+          "result": "40% reduction in financing cost compared to initial quotes"
+        }
+      ]
+    },
+    {
+      "id": "equity-advisory",
+      "title": "Equity Advisory",
+      "description": "Equity capital raising and advisory services for growth companies",
+      "detailed_description": "We assist companies in raising equity capital from strategic and financial investors. Our team provides comprehensive support from valuation to investor negotiations and closing.",
+      "key_features": ["Capital Raising", "Valuation Services", "Investor Relations", "Due Diligence"],
+      "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      "icon": "fas fa-chart-line",
+      "process": [
+        "Business Evaluation and Valuation",
+        "Investment Memorandum Preparation",
+        "Investor Identification and Outreach",
+        "Term Sheet Negotiation",
+        "Documentation and Closing"
+      ],
+      "case_studies": [
+        {
+          "title": "Tech Startup Series A",
+          "description": "Led Series A funding round for fintech startup",
+          "result": "₹25 Cr raised at premium valuation"
+        }
+      ]
+    },
+    {
+      "id": "cfo-services",
+      "title": "CFO Services",
+      "description": "Virtual CFO and financial management services for SMEs",
+      "detailed_description": "Our Virtual CFO services provide businesses access to senior financial expertise without the overhead of a full-time CFO. We help implement robust financial systems and strategic planning.",
+      "key_features": ["Financial Planning", "Budget Management", "Cash Flow", "Reporting"],
+      "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
+      "icon": "fas fa-user-tie",
+      "process": [
+        "Current State Assessment",
+        "Financial System Implementation",
+        "Regular Reporting Setup",
+        "Strategic Planning Support",
+        "Ongoing Advisory"
+      ],
+      "case_studies": [
+        {
+          "title": "Retail Chain Financial Transformation",
+          "description": "Implemented comprehensive financial management system",
+          "result": "30% improvement in working capital efficiency"
+        }
+      ]
+    },
+    {
+      "id": "mergers-acquisitions",
+      "title": "Mergers & Acquisitions",
+      "description": "M&A advisory and transaction services for strategic growth",
+      "detailed_description": "We provide end-to-end M&A advisory services for both buy-side and sell-side transactions. Our team has extensive experience in deal structuring, due diligence, and transaction execution.",
+      "key_features": ["Deal Structuring", "Due Diligence", "Negotiation", "Integration"],
+      "image": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
+      "icon": "fas fa-building",
+      "process": [
+        "Strategic Assessment",
+        "Target Identification/Marketing",
+        "Due Diligence Management",
+        "Transaction Structuring",
+        "Post-Merger Integration Support"
+      ],
+      "case_studies": [
+        {
+          "title": "Healthcare Services Acquisition",
+          "description": "Advised on acquisition of regional healthcare chain",
+          "result": "Successfully completed ₹100 Cr transaction"
+        }
+      ]
+    },
+    {
+      "id": "leasing-advisory",
+      "title": "Leasing Advisory",
+      "description": "Equipment and asset leasing advisory services",
+      "detailed_description": "We help businesses optimize their capital allocation through strategic leasing solutions. Our team provides comprehensive advisory on equipment financing and lease structuring.",
+      "key_features": ["Equipment Financing", "Lease Structuring", "Vendor Management", "Compliance"],
+      "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
+      "icon": "fas fa-truck",
+      "process": [
+        "Asset Requirement Analysis",
+        "Leasing vs Purchase Evaluation",
+        "Vendor and Lessor Selection",
+        "Lease Documentation",
+        "Ongoing Compliance Management"
+      ],
+      "case_studies": [
+        {
+          "title": "Fleet Leasing Optimization",
+          "description": "Restructured fleet leasing for logistics company",
+          "result": "25% reduction in total cost of ownership"
+        }
+      ]
+    },
+    {
+      "id": "structured-mortgages",
+      "title": "Structured Mortgages",
+      "description": "Custom mortgage solutions and advisory services",
+      "detailed_description": "We design and arrange structured mortgage solutions for commercial real estate transactions. Our expertise covers complex financing structures and regulatory compliance.",
+      "key_features": ["Mortgage Structuring", "Rate Optimization", "Documentation", "Compliance"],
+      "image": "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg",
+      "icon": "fas fa-home",
+      "process": [
+        "Property Valuation and Assessment",
+        "Mortgage Structure Design",
+        "Lender Negotiation",
+        "Documentation Preparation",
+        "Closing and Disbursement"
+      ],
+      "case_studies": [
+        {
+          "title": "Commercial Property Financing",
+          "description": "Arranged structured mortgage for office complex",
+          "result": "₹75 Cr financing at competitive rates"
+        }
+      ]
+    },
+    {
+      "id": "financial-restructuring",
+      "title": "Financial Restructuring",
+      "description": "Debt restructuring and turnaround services",
+      "detailed_description": "We assist distressed companies in restructuring their financial obligations and implementing turnaround strategies. Our approach focuses on sustainable solutions and stakeholder alignment.",
+      "key_features": ["Debt Restructuring", "Turnaround Planning", "Creditor Negotiation", "Implementation"],
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+      "icon": "fas fa-redo-alt",
+      "process": [
+        "Financial Health Assessment",
+        "Restructuring Plan Development",
+        "Stakeholder Negotiation",
+        "Implementation Support",
+        "Monitoring and Follow-up"
+      ],
+      "case_studies": [
+        {
+          "title": "Manufacturing Turnaround",
+          "description": "Led successful turnaround of textile manufacturer",
+          "result": "Restored profitability within 18 months"
+        }
+      ]
+    }
+  ],
+  "counters": [
+    { "value": 14, "suffix": "+", "label": "Years in Business" },
+    { "value": 12, "suffix": "+", "label": "Team Members" },
+    { "value": 500, "suffix": "+", "label": "Crores Syndicated" },
+    { "value": 200, "suffix": "+", "label": "Successful Deals" }
+  ],
+  "team": [
+    {
+      "name": "Ravi Jaisalmeria",
+      "position": "Founder and Director",
+      "bio": "A Chartered Accountant with 2 decade of expertise in Accountancy, Finance, and Investment Banking. He has held leadership roles with a global healthcare giant, a public listed company, and a leading bank. With deep experience in capital raising, mergers & acquisitions, and corporate restructuring, he is known for delivering strategic financial solutions that empower businesses to grow and transform.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Investment Banking", "M&A", "Strategic Planning"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Bhupinder Narendra Garg",
+      "position": "Founder and Director",
+      "bio": "An MBA with over 2 decades of rich experience in Banking and Financial Advisory, with deep expertise in Corporate Finance, Investment Banking, Debt Structuring, Leasing, Forex & Treasury, and Branch Banking. He brings extensive experience in Pharmaceuticals-focused Investment Banking and has successfully driven strategic planning, investments, and corporate lending advisory—delivering innovative financial solutions that create long-term value.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Banking", "Financial Advisory", "Debt Structuring"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Shekhar Shrawankumar Bhuwania",
+      "position": "Founder and Director",
+      "bio": "A Chartered Accountant, Company Secretary, and Law Graduate, he brings over 2 decades of rich and diverse experience across Finance, Investment Banking, Taxation, Legal, Secretarial, and Compliance functions. His professional journey spans leadership roles in a leading Private Sector Bank, a top-tier Law Firm, and one of the Big Four Audit Firms—equipping him with a rare blend of financial acumen, legal expertise, and strategic advisory capabilities.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Legal Advisory", "Compliance", "Taxation"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Mayuri",
+      "position": "Team Leader - Debt Syndication",
+      "bio": "With 10+ years in debt syndication, she has been the bridge between corporates, NBFCs, and growth capital, crafting financial solutions that fuel expansion when it matters most.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Debt Syndication", "Corporate Finance"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Dipika",
+      "position": "Senior Associate",
+      "bio": "CA, with 10+ years of expertise in Debt Syndication, recognized for exceptional people skills and strong relationship-building. She partners with corporates and NBFCs to secure growth capital at critical junctures, enabling them to scale with confidence.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Debt Syndication", "Relationship Management"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Brijen",
+      "position": "Sr. Relationship Manager",
+      "bio": "MBA in Finance with 6+ years of experience in leasing, specializing in operating leases. Skilled in financial analysis, asset management, and building strong client relationships.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Leasing", "Financial Analysis", "Client Relations"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Ayush",
+      "position": "Sr. Relationship Manager",
+      "bio": "Experienced relationship manager with expertise in client acquisition and financial advisory services.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Client Acquisition", "Financial Advisory"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Saurabh",
+      "position": "VP - Debt Syndication",
+      "bio": "CA, 11+ years of experience in financial services industry, excel in corporate relationship management, structuring debt solution and handling complex project finance assignments.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Debt Syndication", "Project Finance", "Corporate Relations"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Yash",
+      "position": "Senior Associate",
+      "bio": "CA with 5+ years of experience. Have worked across the corporate spectrum - from auditing and taxation to M&A and fundraising. Previously at E & Y, was part of India's largest $2Bn+ healthcare deal, honing expertise in deal diligences amongst many other such projects. With a knack for crafting compelling narratives, translating them into numbers, and turning those into strategy, helps clients to bring ideas to life.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["M&A", "Due Diligence", "Strategy"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Laxmikant",
+      "position": "Senior Associate",
+      "bio": "CA with 5+ years of experience in Financial Due Diligence, Transaction Advisory, and Startup Growth Strategy. Formerly at E & Y, worked on buy-side and sell-side deals before founding WealthAlly, a WealthTech platform enabling innovative investments for startups and retail investors. Specializing in scaling startups, structuring fundraises, and driving strategic growth across early and late stage deals.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Due Diligence", "Startup Strategy", "Transaction Advisory"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Varun",
+      "position": "Senior Associate",
+      "bio": "CA with 8+ years of experience with Deloitte and E&Y in transaction advisory which consists of Debt, Private equity and Merger and Acquisition.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Transaction Advisory", "Private Equity", "M&A"],
+      "linkedin": "#"
+    },
+    {
+      "name": "Aditya",
+      "position": "Manager- Client Acquisition",
+      "bio": "MBA graduate from NMIMS with a strong foundation in finance & advisory. Ex-ICICI Bank professional with proven expertise in client acquisition and origination. Recognized for driving growth, strengthening partnerships, and enabling impactful investment banking solutions.",
+      "image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "specialties": ["Client Acquisition", "Investment Banking", "Partnerships"],
+      "linkedin": "#"
+    }
+  ],
+  "testimonials": [
+    {
+      "client": "Amit Patel",
+      "company": "TechVenture Solutions",
+      "position": "CEO",
+      "testimonial": "Growthally's equity advisory team helped us secure Series A funding at a valuation that exceeded our expectations. Their deep market knowledge and investor network were invaluable.",
+      "rating": 5
+    },
+    {
+      "client": "Sunita Krishnan",
+      "company": "Manufacturing Corp",
+      "position": "CFO",
+      "testimonial": "The debt syndication services provided by Growthally saved us significant costs and time. Their professional approach and industry relationships made the difference.",
+      "rating": 5
+    },
+    {
+      "client": "Rohit Agarwal",
+      "company": "Retail Dynamics",
+      "position": "Founder",
+      "testimonial": "Growthally's M&A advisory was instrumental in our successful acquisition. They managed every aspect of the transaction with utmost professionalism.",
+      "rating": 5
+    }
+  ],
+  "blog_posts": [
+    {
+      "id": "fintech-funding-trends-2025",
+      "title": "Fintech Funding Trends in India: 2025 Outlook",
+      "excerpt": "Analyzing the evolving fintech landscape and investment opportunities in the Indian market.",
+      "author": "Priya Sharma",
+      "date": "2025-01-15",
+      "category": "Market Insights",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+      "tags": ["Fintech", "Funding", "India", "Investment"]
+    },
+    {
+      "id": "debt-restructuring-strategies",
+      "title": "Effective Debt Restructuring Strategies for SMEs",
+      "excerpt": "A comprehensive guide to debt restructuring options available for small and medium enterprises.",
+      "author": "Vikram Singh",
+      "date": "2025-01-10",
+      "category": "Advisory",
+      "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
+      "tags": ["Debt", "SME", "Restructuring", "Strategy"]
+    },
+    {
+      "id": "ma-market-outlook",
+      "title": "M&A Market Outlook: Key Trends and Opportunities",
+      "excerpt": "Exploring the current M&A landscape and identifying opportunities across sectors.",
+      "author": "Rajesh Mehta",
+      "date": "2025-01-05",
+      "category": "M&A",
+      "image": "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
+      "tags": ["M&A", "Market", "Trends", "Investment"]
+    }
+  ],
+  "blogs": [
+    {
+      "id": "debt-syndication-2025",
+      "title": "Navigating Debt Syndication in 2025",
+      "slug": "navigating-debt-syndication-2025",
+      "excerpt": "Key strategies for securing optimal debt structures in the current market environment.",
+      "content": "In today's dynamic financial landscape, debt syndication has become increasingly complex yet more critical than ever for businesses seeking growth capital. The traditional approaches to debt structuring are evolving, driven by regulatory changes, market volatility, and shifting lender preferences.\n\n## Key Considerations for 2025:\n\n### 1. Digital Documentation\nThe shift towards digital loan documentation has accelerated post-pandemic. Lenders now expect comprehensive digital due diligence packages, making data room preparation more crucial than ever.\n\n### 2. ESG Compliance\nEnvironmental, Social, and Governance factors are no longer optional. Lenders are increasingly incorporating ESG criteria into their lending decisions, making sustainability reporting essential.\n\n### 3. Alternative Lending Sources\nTraditional banks are no longer the only game in town. NBFCs, private credit funds, and fintech lenders offer diverse options with varying terms and requirements.\n\n### 4. Interest Rate Volatility\nWith fluctuating interest rates, businesses must be strategic about timing and structure. Fixed vs. floating rate decisions can significantly impact long-term cost of capital.\n\n## Our Approach\n\nAt Growthally, we've successfully syndicated over ₹500 crores in debt across various sectors, helping our clients navigate these complexities while securing optimal terms. Our approach combines deep market knowledge with strong lender relationships, ensuring our clients get the best possible outcomes.\n\nThe key to successful debt syndication lies in preparation, presentation, and partnership. We work closely with our clients to tell their story compellingly while structuring deals that meet both borrower needs and lender requirements.",
+      "author": "Ravi Jaisalmeria",
+      "author_bio": "Founder and Director with 20+ years in investment banking",
+      "author_image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "date": "August 15, 2025",
+      "read_time": "6 min read",
+      "featured_image": "https://www.growthally.org/wp-content/uploads/2022/02/funding-invest-financial-money-budget-concept-1024x594.jpg",
+      "tags": ["Debt Syndication", "Financial Strategy", "Lending", "2025 Trends"],
+      "category": "Financial Advisory",
+      "status": "published",
+      "meta_description": "Key strategies for securing optimal debt structures in the current market environment with insights on digital documentation and ESG compliance."
+    },
+    {
+      "id": "alternative-funding-smes",
+      "title": "The Rise of Alternative Funding for SMEs",
+      "slug": "alternative-funding-smes",
+      "excerpt": "Exploring new funding avenues beyond traditional banking for small and medium enterprises.",
+      "content": "Small and Medium Enterprises (SMEs) in India are experiencing a funding revolution. Traditional bank lending, while still important, is no longer the sole avenue for business growth capital. This shift presents both opportunities and challenges for SME owners seeking to scale their operations.\n\n## The New Funding Landscape\n\nDigital lending platforms have democratized access to capital, offering faster processing times and more flexible terms than traditional banks. However, this convenience often comes with higher interest rates and shorter repayment periods.\n\nPrivate credit funds are emerging as serious alternatives, particularly for established SMEs with strong cash flows. These funds often provide more patient capital and flexible structures compared to traditional lenders.\n\n## Sectoral Considerations\n\n### Manufacturing SMEs\nBenefit from asset-backed lending options, including equipment financing and invoice discounting.\n\n### Technology Companies\nCan explore revenue-based financing and venture debt options that align with their growth trajectories.\n\n### Pharmaceutical Sector\nGiven long development cycles, requires specialized funding structures that account for regulatory timelines and clinical trial costs.\n\n## Strategic Approach\n\nSuccessful SME funding requires a multi-pronged approach. We recommend maintaining relationships with multiple funding sources while building strong financial documentation and reporting systems.\n\n## Our Experience\n\nAt Growthally, we've helped over 200 SMEs secure funding through various channels, ensuring they get the right type of capital at the right cost for their specific growth stage and sector requirements.\n\nThe key is understanding that different funding sources serve different purposes - working capital needs might be best served by digital lenders, while expansion capital might require traditional bank relationships or private credit solutions.",
+      "author": "Bhupinder Garg",
+      "author_bio": "Founder and Director with 20+ years in banking and financial advisory",
+      "author_image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "date": "August 10, 2025",
+      "read_time": "5 min read",
+      "featured_image": "https://www.growthally.org/wp-content/uploads/2022/01/Services.png",
+      "tags": ["SME Funding", "Alternative Finance", "Digital Lending", "Business Growth"],
+      "category": "SME Finance",
+      "status": "published",
+      "meta_description": "Exploring new funding avenues beyond traditional banking for small and medium enterprises in the evolving financial landscape."
+    },
+    {
+      "id": "ma-trends-2025",
+      "title": "M&A Trends Shaping 2025",
+      "slug": "ma-trends-2025",
+      "excerpt": "Current merger and acquisition trends and their impact on mid-market deals in India.",
+      "content": "The Indian M&A landscape in 2025 is characterized by strategic consolidation, technology-driven transactions, and increasing focus on sustainable business models. Mid-market deals, particularly in the ₹50-500 crore range, are seeing unprecedented activity.\n\n## Key Trends Observed\n\n### 1. Technology Integration\nTraditional businesses are acquiring tech startups to digitize their operations. We're seeing manufacturing companies acquire logistics tech firms, and financial services companies investing in fintech startups.\n\n### 2. Succession Planning\nFamily-owned businesses are increasingly open to strategic partnerships and partial exits as founders look toward succession planning. This trend is particularly strong in the manufacturing and trading sectors.\n\n### 3. Cross-Border Interest\nInternational investors are showing renewed interest in Indian mid-market companies, particularly in sectors like pharmaceuticals, IT services, and renewable energy.\n\n### 4. Distressed Asset Opportunities\nThe post-pandemic recovery has created opportunities for strategic buyers to acquire quality assets at attractive valuations.\n\n## Valuation Considerations\n\nCurrent market conditions favor buyers, with valuation multiples stabilizing after the highs of 2021-2022. However, quality companies with strong fundamentals continue to command premium valuations.\n\nDue diligence processes have become more rigorous, with increased focus on:\n- ESG compliance\n- Cybersecurity\n- Business continuity planning\n- Digital transformation readiness\n\n## Strategic Insights\n\n### For Sellers\nPreparation is key. Companies that invest in professional financial reporting, legal compliance, and strategic planning fetch better valuations and complete transactions more smoothly.\n\n### For Buyers\nBuyers are increasingly looking for companies with:\n- Recurring revenue models\n- Strong management teams\n- Clear growth strategies\n- Technology-enabled operations\n\n## Our Track Record\n\nAt Growthally, our M&A advisory services have facilitated transactions worth over ₹800 crores, helping both buyers and sellers navigate this complex landscape while maximizing value for all stakeholders.\n\nThe key to successful M&A lies in thorough preparation, strategic positioning, and expert execution throughout the transaction lifecycle.",
+      "author": "Shekhar Bhuwania",
+      "author_bio": "Founder and Director with expertise in M&A and legal advisory",
+      "author_image": "https://www.growthally.org/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-21-at-18.28.36.jpeg",
+      "date": "August 5, 2025",
+      "read_time": "7 min read",
+      "featured_image": "https://www.growthally.org/wp-content/uploads/2022/01/Mergers-Acquisitions-1-7.png",
+      "tags": ["M&A", "Mergers", "Acquisitions", "2025 Trends", "Valuation"],
+      "category": "M&A Advisory",
+      "status": "published",
+      "meta_description": "Current merger and acquisition trends and their impact on mid-market deals in India with insights on technology integration and valuation dynamics."
+    }
+  ],
+  "news": [
+    {
+      "title": "Growthally Advisors Expands Delhi Operations",
+      "date": "2025-01-20",
+      "excerpt": "We are pleased to announce the expansion of our Delhi office to better serve clients in the NCR region."
+    },
+    {
+      "title": "Successfully Closed ₹100 Cr M&A Transaction",
+      "date": "2025-01-18",
+      "excerpt": "Our team successfully advised on a major acquisition in the healthcare sector."
+    }
+  ],
+  "team_events": [
+    {
+      "Title": "Team Building Summit 2024",
+      "Type": "video",
+      "URL": "https://www.youtube.com/watch?v=LPF3XSIJZgE",
+      "Thumbnail": "https://www.growthally.org/wp-content/uploads/2022/02/funding-invest-financial-money-budget-concept-1024x594.jpg"
+    },
+    {
+      "Title": "Annual Conference Mumbai",
+      "Type": "image",
+      "URL": "https://www.growthally.org/wp-content/uploads/2021/12/events-1.png",
+      "Thumbnail": null
+    },
+    {
+      "Title": "Client Success Celebration",
+      "Type": "image",
+      "URL": "https://www.growthally.org/wp-content/uploads/2022/02/funding-invest-financial-money-budget-concept-1024x594.jpg",
+      "Thumbnail": null
+    },
+    {
+      "Title": "Office Tour & Culture",
+      "Type": "video",
+      "URL": "https://www.youtube.com/watch?v=LPF3XSIJZgE",
+      "Thumbnail": "https://www.growthally.org/wp-content/uploads/2022/01/About-Growthally.png"
+    }
+  ]
+}
