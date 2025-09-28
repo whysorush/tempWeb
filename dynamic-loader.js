@@ -8,27 +8,46 @@ class DynamicLoader {
 
     async init() {
         try {
+            console.log('Initializing DynamicLoader...');
             await this.loadData();
+            console.log('Data loaded successfully:', this.data);
             this.hideLoader();
             this.renderContent();
             this.initializeEvents();
             this.initializeAnimations();
+            console.log('DynamicLoader initialized successfully');
         } catch (error) {
             console.error('Failed to initialize:', error);
             this.hideLoader();
+            this.showBasicContent();
         }
     }
 
     async loadData() {
         try {
-            const response = await fetch('assets.json');
+            // Try different paths for GitHub Pages compatibility
+            let response;
+            try {
+                response = await fetch('./assets.json');
+            } catch (e) {
+                response = await fetch('assets.json');
+            }
+            
             if (!response.ok) {
                 throw new Error('Failed to load data');
             }
             this.data = await response.json();
         } catch (error) {
             console.error('Error loading data:', error);
-            throw error;
+            // Fallback: create basic data structure
+            this.data = {
+                services: [],
+                team: [],
+                testimonials: [],
+                blogs: [],
+                counters: [],
+                team_events: []
+            };
         }
     }
 
@@ -43,15 +62,31 @@ class DynamicLoader {
     }
 
     renderContent() {
-        this.renderServicesEnhanced();
-        this.renderTeam();
-        this.renderTestimonials();
-        this.renderBlogPosts();
-        this.renderFooterServices();
-        this.renderServicesDropdown();
-        this.renderCounters();
-        this.renderLeadership();
-        this.renderTeamEvents();
+        try {
+            this.renderServicesEnhanced();
+            this.renderTeam();
+            this.renderTestimonials();
+            this.renderBlogPosts();
+            this.renderFooterServices();
+            this.renderServicesDropdown();
+            this.renderCounters();
+            this.renderLeadership();
+            this.renderTeamEvents();
+        } catch (error) {
+            console.error('Error rendering content:', error);
+            // Ensure basic content is visible even if dynamic content fails
+            this.showBasicContent();
+        }
+    }
+
+    showBasicContent() {
+        // Show basic content if dynamic loading fails
+        const sections = document.querySelectorAll('.we-are-pinc, .services-section, .testimonials-section, .teams-section');
+        sections.forEach(section => {
+            if (section) {
+                section.style.display = 'block';
+            }
+        });
     }
 
     renderServicesEnhanced() {
