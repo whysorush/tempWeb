@@ -172,30 +172,84 @@ class DynamicLoader {
     }
 
     renderBlogPosts() {
-        const blogGrid = document.getElementById('blog-preview-grid');
-        if (!blogGrid || !this.data.blogs) return;
+        const insightsCarousel = document.getElementById('insights-carousel-inner');
+        const indicatorsContainer = document.querySelector('#insightsCarousel .carousel-indicators');
+        if (!insightsCarousel || !this.data.blogs) return;
 
-        const blogHTML = this.data.blogs.slice(0, 3).map(post => `
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="blog-card fade-in" onclick="window.location.href='blog/${post.slug}.html'" style="cursor: pointer;">
-                    <div class="blog-image">
-                        <img src="${post.featured_image}" alt="${post.title}" class="img-fluid">
-                    </div>
-                    <div class="blog-content">
-                        <span class="blog-category">${post.category}</span>
-                        <h5 class="blog-title">${post.title}</h5>
-                        <p class="blog-excerpt">${post.excerpt}</p>
-                        <div class="blog-meta">
-                            <span class="blog-author">By ${post.author}</span>
-                            <span class="blog-date">${this.formatDate(post.date)}</span>
-                            <span class="read-time">${post.read_time}</span>
-                        </div>
-                    </div>
+        const blogPosts = this.data.blogs;
+        const slides = [];
+        const indicators = [];
+        
+        // Create slides with 2 posts each
+        for (let i = 0; i < blogPosts.length; i += 2) {
+            const slidePosts = blogPosts.slice(i, i + 2);
+            const slideIndex = Math.floor(i / 2);
+            const isActive = slideIndex === 0 ? 'active' : '';
+            
+            const slideHTML = `
+                <div class="carousel-item ${isActive}">
+                    ${slidePosts.map((post, postIndex) => {
+                        const isEven = postIndex % 2 === 0;
+                        const imageOrder = isEven ? 'order-lg-1' : 'order-lg-2';
+                        const textOrder = isEven ? 'order-lg-2' : 'order-lg-1';
+                        const marginClass = isEven ? 'mb-4 mb-lg-0' : '';
+                        
+                        return `
+                            <div class="row align-items-center ${slideIndex > 0 ? 'mb-5' : ''}">
+                                <div class="col-12 col-lg-4 ${imageOrder} ${marginClass}">
+                                    <div class="blog-image-container">
+                                        <img src="${post.featured_image}" 
+                                             alt="${post.title}" 
+                                             class="img-fluid blog-image" 
+                                             style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-8 ${textOrder}">
+                                    <div class="blog-content" style="padding: 20px;">
+                                        <h3 class="blog-title" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-transform: uppercase; font-size: 1.5rem; margin-bottom: 15px; letter-spacing: 1px;">${post.title}</h3>
+                                        <p class="blog-excerpt" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 1rem; line-height: 1.6; margin-bottom: 20px;">${post.excerpt}</p>
+                                        <a href="blog/${post.slug}.html" class="blog-link" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 0.875rem; font-weight: 500; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">Know More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
                 </div>
-            </div>
-        `).join('');
+            `;
+            
+            slides.push(slideHTML);
+            indicators.push(`<li data-target="#insightsCarousel" data-slide-to="${slideIndex}" class="${isActive}" style="background-color: #333333; border-radius: 50%; width: 12px; height: 12px;"></li>`);
+        }
+        
+        insightsCarousel.innerHTML = slides.join('');
+        if (indicatorsContainer) {
+            indicatorsContainer.innerHTML = indicators.join('');
+        }
+        
+        // Initialize carousel with auto-scroll
+        this.initializeInsightsCarousel();
+    }
 
-        blogGrid.innerHTML = blogHTML;
+    initializeInsightsCarousel() {
+        const carousel = document.getElementById('insightsCarousel');
+        if (!carousel) return;
+
+        // Initialize Bootstrap carousel
+        $(carousel).carousel({
+            interval: 4000,
+            pause: false,
+            wrap: true
+        });
+
+        // Ensure auto-scroll continues
+        $(carousel).on('slide.bs.carousel', function () {
+            // Auto-scroll continues after each slide
+        });
+
+        // Start auto-scroll if not already started
+        if (!$(carousel).data('bs.carousel')) {
+            $(carousel).carousel('cycle');
+        }
     }
 
     renderFooterServices() {
